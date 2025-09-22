@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+python-telegram-echo/.env
+
+# Java/Maven
+target/
+*.iml
+.idea/
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
