@@ -56,3 +56,10 @@ python main.py
 
 輸入 /ping → bot 應該會回「pong」
 
+
+
+## 測試方式
+啟動後在 Telegram 對話框輸入：
+- `/start` → 顯示歡迎訊息
+- `/ping` → 回覆 `pong`
+- `/help` → 顯示支援的指令清單

@@ -37,4 +37,8 @@
 
 # MainTest 要移到 test\java\com\example 才符合測試檔案
 
-## 最後操作指令 mvn test
+## 最後操作指令 
+mvn test
+
+## 執行範例
+mvn compile exec:java -Dexec.mainClass="com.example.Main"
