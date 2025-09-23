@@ -14,3 +14,4 @@ target/
 
 # VS Code
 .vscode/
+01-hello-bots/python-telegram-echo/.env

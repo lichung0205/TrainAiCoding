@@ -13,6 +13,9 @@
 ## 執行步驟
 ```bash
 
+## 需求套件
+- 請以 requirements.txt 為準
+
 ## 有時候 Python 安裝時沒勾 pip，可以這樣補，這樣就能使用 pip 指令了
 python -m ensurepip --upgrade
 
@@ -37,7 +40,7 @@ cd D:\Dev\TrainAiCoding
 cd 01-hello-bots\python-telegram-echo
 
 4. 安裝需求套件
-python -m pip install -r requirements.txt python-dotenv
+python -m pip install -r requirements.txt
 
 5. 建立 .env 檔案
 
@@ -54,12 +57,17 @@ python main.py
 
 輸入 /start → bot 應該會回「Hello! I'm your echo bot.」
 
-輸入 /ping → bot 應該會回「pong」
+輸入 /ping → bot 應該會回「Pong」
 
+輸入 /time → bot 應該會回 台北時間：2025-09-23 16:54:38
+
+輸入 /upper abcdefg → bot 應該會回 ABCDEFG
 
 
 ## 測試方式
 啟動後在 Telegram 對話框輸入：
 - `/start` → 顯示歡迎訊息
-- `/ping` → 回覆 `pong`
+- `/ping` → 回覆 `Pong`
 - `/help` → 顯示支援的指令清單
+- `/time` → 回覆當下台北時間（格式：YYYY-MM-DD HH:MM:SS）。
+- `/upper <文字>` → 把使用者輸入轉成全大寫回覆。
