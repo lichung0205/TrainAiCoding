@@ -31,10 +31,9 @@ buildNumber.properties
 .env
 .env.*
 *.env
-
-# 專案內部子目錄的 .env
-01-hello-bots/python-telegram-echo/.env
-01-hello-bots/python-telegram-echo/.env.*
+**/.env
+**/.env.*
+*.env.*
 
 # =========================
 # Logs & OS
