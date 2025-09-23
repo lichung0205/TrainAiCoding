@@ -1,17 +1,44 @@
+# =========================
 # Python
+# =========================
 .venv/
 __pycache__/
-*.pyc
-python-telegram-echo/.env
+*.py[cod]
+*$py.class
 
-# Java/Maven
+# =========================
+# Java / Maven
+# =========================
 target/
+*.class
 *.iml
 .idea/
 .classpath
 .project
 .settings/
+dependency-reduced-pom.xml
+buildNumber.properties
 
+# =========================
 # VS Code
+# =========================
 .vscode/
+
+# =========================
+# Environment files
+# =========================
+# 忽略所有層級的 .env 與樣板
+.env
+.env.*
+*.env
+
+# 專案內部子目錄的 .env
 01-hello-bots/python-telegram-echo/.env
+01-hello-bots/python-telegram-echo/.env.*
+
+# =========================
+# Logs & OS
+# =========================
+*.log
+.DS_Store
+Thumbs.db
