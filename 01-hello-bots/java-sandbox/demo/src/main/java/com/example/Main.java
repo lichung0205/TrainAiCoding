@@ -16,5 +16,10 @@ public class Main {
         } catch (Exception e) {
             System.out.println("全部重試失敗：" + e.getMessage());
         }
+
+        Calculator calobj = new Calculator();
+        System.out.println("相加：" + calobj.add(2, 5));
+        System.out.println("相減：" + calobj.sub(2, 5));
+        System.out.println("多個相加：" + calobj.addMultiple(2, 5, 10));
     }
 }
