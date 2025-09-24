@@ -1,3 +1,8 @@
+# 現有依賴
 python-telegram-bot~=21.0
 python-dotenv~=0.21.0
 pytz~=2023.3
+
+# 新增測試依賴
+pytest>=7.4.0
+pytest-asyncio>=0.21.0

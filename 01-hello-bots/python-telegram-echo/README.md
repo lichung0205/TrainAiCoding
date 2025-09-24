@@ -16,6 +16,8 @@
 ## 需求套件
 - 請以 requirements.txt 為準
 
+pip install -r requirements.txt
+
 ## 有時候 Python 安裝時沒勾 pip，可以這樣補，這樣就能使用 pip 指令了
 python -m ensurepip --upgrade
 
@@ -71,3 +73,28 @@ python main.py
 - `/help` → 顯示支援的指令清單
 - `/time` → 回覆當下台北時間（格式：YYYY-MM-DD HH:MM:SS）。
 - `/upper <文字>` → 把使用者輸入轉成全大寫回覆。
+
+
+9/24 add
+錯誤處理機制
+錯誤類型分類
+錯誤類型退出碼使用場景範例UserInputError2使用者輸入錯誤缺少參數、格式不正確DomainRuleError3業務規則違反文字過長、時區不支援SystemError1系統異常網路錯誤、IO 異常
+錯誤訊息格式
+所有錯誤都會以統一格式回應：
+json{
+  "code": "ERROR_CODE",
+  "message": "人類可讀的錯誤描述",
+  "hint": "解決方案建議",
+  "correlationId": "唯一追蹤識別碼"
+}
+使用者會看到的格式：
+❌ 錯誤描述
+💡 解決建議
+🔍 追蹤ID: abc12345
+CLI 退出碼說明
+
+0: 正常執行完畢
+1: 系統錯誤（預設錯誤）
+2: 使用者輸入錯誤
+3: 業務規則錯誤
+130: 使用者中斷（Ctrl+C）
